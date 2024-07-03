@@ -7,7 +7,7 @@
 ## Установка
 
 ```json
-    "mihaildev/yii2-elfinder-flysystem": "*"
+    "leparkour/yii2-elfinder-flysystem": "*"
 ```
 
 ## Настройка
