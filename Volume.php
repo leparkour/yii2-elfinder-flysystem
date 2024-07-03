@@ -33,8 +33,7 @@ class Volume extends Base
             throw new InvalidConfigException('The "component" property must be set.');
         }
 
-        /** @var DiecodingFilesystem $component */
-
+        /** @var Filesystem $component */
         if (is_string($this->component)) {
             $component = \Yii::$app->get($this->component);
         } else {
@@ -46,11 +45,7 @@ class Volume extends Base
         }
 
         $options['separator'] = $this->separator;
-        $options['filesystem'] = new Filesystem(new SftpAdapter(
-            new SftpConnectionProvider($this->component['config']),
-            $this->component['root'],
-            PortableVisibilityConverter::fromArray($this->component['perm'])
-        ));;
+        $options['filesystem'] = $component->getFilesystem();
 
         $options['path'] = $this->path;
 
