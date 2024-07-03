@@ -19,7 +19,7 @@
     "require": {
         "mihaildev/yii2-elfinder": "*",
         "diecoding/yii2-flysystem": "^1.0",
-        "barryvdh/elfinder-flysystem-driver": "0.2.*"
+        "barryvdh/elfinder-flysystem-driver": "^5"
     },
     "repositories": [
         {
