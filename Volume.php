@@ -37,7 +37,7 @@ class Volume extends Base
             $component = \Yii::createObject($this->component);
         }
 
-        if(!($component instanceof \creocoder\flysystem\Filesystem || $component instanceof Filesystem))
+        if(!($component instanceof \diecoding\flysystem\Filesystem || $component instanceof Filesystem))
             throw new InvalidConfigException('A Filesystem instance is required');
 
         $options['separator'] = $this->separator;
