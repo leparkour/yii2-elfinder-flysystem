@@ -1,4 +1,4 @@
-Адаптация Flysystem для mihaildev/yii2-elfinder
+Адаптация Flysystem для mihaildev/yii2-elfinder - Php ^8.1 PhpseclibV3
 ===========================
 
 Адаптация расширения https://github.com/barryvdh/elfinder-flysystem-driver
